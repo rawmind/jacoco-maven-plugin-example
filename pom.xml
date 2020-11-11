@@ -61,13 +61,6 @@
             </goals>
           </execution>
           <execution>
-            <id>jacoco-report</id>
-            <phase>prepare-package</phase>
-            <goals>
-              <goal>report</goal>
-            </goals>
-          </execution>
-          <execution>
             <id>jacoco-check</id>
             <phase>verify</phase>
             <goals>
@@ -93,7 +86,14 @@
               </rules>
             </configuration>
           </execution>
-        </executions>
+           <execution>
+            <id>jacoco-report</id>
+            <phase>prepare-package</phase>
+            <goals>
+              <goal>report</goal>
+            </goals>
+          </execution>
+       </executions>
       </plugin>
     </plugins>
   </build>
